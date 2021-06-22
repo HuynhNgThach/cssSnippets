@@ -1,0 +1,146 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+    /* firefox custom scrollbar */
+    scrollbar-width: thin; 
+    scrollbar-color: #6649b8 #1e1e24;
+   
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    color: black;
+    background-color: white;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+main {
+    margin-left: 5rem;
+}
+nav {
+    
+    position: fixed;
+    background: var(--bg-primary);
+    transition: width 0.5s ease;
+}
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.5s ease;
+    
+}
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+.link-text {
+    display: none;
+    margin-left: 0.3rem;
+}
+
+.nav-link svg{
+    width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+.logo {
+   
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    letter-spacing: 5px;
+}
+
+.logo svg {
+    transform: rotate(0);
+    transition: transform 0.5s ease-in-out;
+}
+.navbar:hover .logo svg {
+    transform: rotate(-540deg);
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        bottom: 0;
+        width: 100vw;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-item {
+        height: 100%; 
+    }
+    .logo {
+        display: none;
+    }
+    main {
+        margin: 1rem 1rem 6rem 1rem;
+    }
+}
+@media only screen and (min-width: 600px) {
+    nav {
+        top: 0;
+        height: 100vh;
+        width: 5rem;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .navbar:hover {
+        width: 16rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+    }
+    .nav-item {
+        width: 100%;
+        
+    }
+    .logo {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
