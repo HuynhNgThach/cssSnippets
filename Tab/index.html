@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tab test</title>
+  </head>
+  <body>
+    <div class="tab__conatiner">
+      <div class="tab">
+        <button class="tab__item" data-id="starterKit">Starter kit</button>
+        <button class="tab__item tab-active" data-id="header">Header</button>
+        <button class="tab__item" data-id="authenIdent">
+          Authentication-identification
+        </button>
+        <button class="tab__item" data-id="prdListing">Product Listing</button>
+        <button class="tab__item" data-id="paymentConfirm">
+          Payment-Confirm
+        </button>
+        <button class="tab__item" data-id="result">Result</button>
+        <button class="tab__item" data-id="promoResult">
+          Promotion Result
+        </button>
+      </div>
+      <div class="table__wrapper show" id="header">
+        <div class="img__description">
+          <img
+            src="./img/header/header1.png"
+            title="Header image description"
+            alt="header1"
+          />
+          <img
+            src="./img/header/header2.png"
+            title="Header image description"
+            alt="header1"
+          />
+          <p class="img__description-text">Header image description</p>
+        </div>
+        <table id="table">
+          <tr>
+            <th>Event Category</th>
+            <th>Event Action</th>
+            <th>Event Label</th>
+            <th>Custom Dimension</th>
+            <th>Note</th>
+            <th>Custom_event</th>
+            <th>DataLayer</th>
+            <th>Version</th>
+            <th>Changes</th>
+          </tr>
+          <tr>
+            <td>header</td>
+            <td>click_home</td>
+            <td>mainsite|shopfront</td>
+            <td>$cd1=userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header</td>
+            <td>click_language</td>
+            <td>$language</td>
+            <td>$cd1=userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header</td>
+            <td>click_logout</td>
+            <td></td>
+            <td>$cd1=userID</td>
+            <td>sessionControl: end</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header</td>
+            <td>click_account_info</td>
+            <td></td>
+            <td>$cd1=userID</td>
+            <td>header</td>
+            <td>header</td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header</td>
+            <td>click_gift_history</td>
+            <td></td>
+            <td>$cd1=userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>header</td>
+            <td>display_header</td>
+            <td>$object($language)</td>
+            <td>$cd1=userID</td>
+            <td></td>
+            <td>display_header</td>
+            <td>displayLanguage</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>promo_signal</td>
+            <td>display_promo_signal</td>
+            <td>$promotionType</td>
+            <td>$cd1=userID</td>
+            <td>cd6=promotionID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>promo_signal</td>
+            <td>click_promo_signal</td>
+            <td>$promotionType</td>
+            <td>$cd1=userID</td>
+            <td>cd6=promotionID</td>
+            <td>header</td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>step_indicator</td>
+            <td>click_step_indicator</td>
+            <td>$stepValue</td>
+            <td>$cd1=userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,1</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="table__wrapper" id="authenIdent">
+        <div class="img__description">
+          <img
+            src="./img/authenIndent/authenIdent1.png"
+            title="Authentication - identification image description"
+            alt="authenIdent1"
+          />
+          <img
+            src="./img/authenIndent/authenIdent2.png"
+            title="Authentication - identification image description"
+            alt="authenIdent2"
+          />
+          <img
+            src="./img/authenIndent/authenIdent3.png"
+            title="Authentication - identification image description"
+            alt="authenIdent3"
+          />
+          <p class="img__description-text">
+            Authentication - identification image description
+          </p>
+        </div>
+        <table id="table">
+          <tr>
+            <th>Event Category</th>
+            <th>Event Action</th>
+            <th>Event Label</th>
+            <th>Custom Dimension</th>
+            <th>Note</th>
+            <th>Custom_event</th>
+            <th>DataLayer</th>
+            <th>Version</th>
+            <th>Changes</th>
+          </tr>
+          <tr>
+            <td>login_form</td>
+            <td>display_idp_form</td>
+            <td>object($login_display_info)</td>
+            <td>$cd1=userID</td>
+            <td></td>
+            <td>display_idp_form</td>
+            <td>loginDisplayInfo</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>login_form</td>
+            <td>click_submit_id_btn</td>
+            <td>$idp</td>
+            <td>cd3=$status_code</td>
+            <td>
+              $idp = facebook | zalo | line | google | zingid | email | role |
+              email_account
+            </td>
+            <td>click_submit_id_btn</td>
+            <td>idp clickSubmitIdpStatus</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>login_form</td>
+            <td>click_other_idp</td>
+            <td>$idp</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>login_form</td>
+            <td>click_forget_password</td>
+            <td>zingid</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>login_form</td>
+            <td>submit_idp_form</td>
+            <td>$idp</td>
+            <td>$cd1=userID</td>
+            <td></td>
+            <td>submit_idp_form</td>
+            <td>idp</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>identification</td>
+            <td>display_id_form</td>
+            <td>
+              suggested_id_info | cached_id_info | direct_id_info |
+              manual_id_input | submitted_id_info
+            </td>
+            <td>cd1=$userID cd3=$action_status || optinal</td>
+            <td></td>
+            <td>display_id_form</td>
+            <td>idFormType getServersStatus</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>identification</td>
+            <td>click_input_server_group</td>
+            <td>$value</td>
+            <td>cd1=$userID cd5=$server_id</td>
+            <td></td>
+            <td>click_input_server_group</td>
+            <td>inputServerGroup (string) selectedServerId</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>identification</td>
+            <td>click_input_server</td>
+            <td>$value</td>
+            <td>cd1=$userID cd3=$action_status cd5=$role_id</td>
+            <td>
+              Khi chọn 1 server có role. Thì sẽ hiển role đầu tiên trong danh
+              sách role
+            </td>
+            <td>click_input_server</td>
+            <td>inputServerId getRolesStatus selectedFirstRoleId</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>identification</td>
+            <td>click_input_role</td>
+            <td>$value</td>
+            <td>cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>identification</td>
+            <td>click_button_submit_identification</td>
+            <td>$server_id, $role_id</td>
+            <td>cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>identification</td>
+            <td>click_button_select_other_role</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>identification</td>
+            <td>submit_identification</td>
+            <td>
+              suggested_id_info|cached_id_info|direct_id_info|manual_id_input
+            </td>
+            <td>cd1=$userID cd4=$type(login|quick|direct)</td>
+            <td>Thành công mới có event</td>
+            <td>submit_identification</td>
+            <td>submitIdentificationType submittedLoginType</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="table__wrapper" id="prdListing">
+        <div class="img__description">
+          <img
+            src="./img/productListing/product1.png"
+            title="Productlisting image description"
+            alt="productlisting1"
+          />
+          <img
+            src="./img/productListing/product2.png"
+            title="Productlisting image description"
+            alt="productlisting2"
+          />
+          <p class="img__description-text">Productlisting image description</p>
+        </div>
+        <table id="table">
+          <tr>
+            <th>Event Category</th>
+            <th>Event Action</th>
+            <th>Event Label</th>
+            <th>Custom Dimension</th>
+            <th>Custom_event</th>
+            <th>DataLayer</th>
+            <th>Version</th>
+            <th>Changes</th>
+          </tr>
+          <tr>
+            <td>package (product listing)</td>
+            <td>display_product_form</td>
+            <td>object(group_list)</td>
+            <td>cd1=$userID</td>
+            <td>display_product_form</td>
+            <td>productDisplayInfo selectedFirstProductId</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package (product listing)</td>
+            <td>display_product_detail</td>
+            <td>$productID</td>
+            <td>cd2=$order cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>select_button_product_group</td>
+            <td>$inputGroupName</td>
+            <td>cd2=$order</td>
+            <td>select_button_product_group</td>
+            <td>inputGroupId (thêm) groupOrder (thêm)</td>
+            <td>1,0</td>
+            <td>bỏ CD5 + selectedFirstProductId</td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>select_button_product_group</td>
+            <td>$inputGroupName</td>
+            <td>cd2=$order</td>
+            <td>auto_select_product_group</td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>click_select_product</td>
+            <td>$productID</td>
+            <td>cd2=$order cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>click_button_product_select</td>
+            <td>$productID</td>
+            <td>cd2=$order cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>click_button_product_view</td>
+            <td>$productID</td>
+            <td>cd2=$order cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>click_button_product_purchase</td>
+            <td>$productID</td>
+            <td>cd2=$order cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>click_button_product_detail_purchase</td>
+            <td>$productID</td>
+            <td>cd2=$order cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>package</td>
+            <td>click_button_product_detail_close</td>
+            <td>$productID</td>
+            <td>cd2=$order cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="table__wrapper" id="paymentConfirm">
+        <div class="img__description">
+          <img
+            src="./img/pmtConfirm/pmtConfirm1.png"
+            title="Payment - Confirm image description"
+            alt="pmtConfirm1"
+          />
+          <img
+            src="./img/pmtConfirm/pmtConfirm2.png"
+            title="Payment - Confirm image description"
+            alt="pmtConfirm2"
+          />
+          <img
+            src="./img/pmtConfirm/pmtConfirm3.png"
+            title="Payment - Confirm image description"
+            alt="pmtConfirm3"
+          />
+          <p class="img__description-text">
+            Payment - Confirm image description
+          </p>
+        </div>
+        <table id="table">
+          <tr>
+            <th>Event Category</th>
+            <th>Event Action</th>
+            <th>Event Label</th>
+            <th>Custom Dimension</th>
+            <th>Custom_event</th>
+            <th>DataLayer</th>
+            <th>Version</th>
+            <th>Changes</th>
+          </tr>
+          <tr>
+            <td>payment (payment channel)</td>
+            <td>display_payment_form</td>
+            <td>
+              object(group_list, selected_payment_processing_channel_group)
+            </td>
+            <td>$cd5=payment_processing_channel</td>
+            <td>display_payment_form</td>
+            <td>paymentDisplayInfo selectedFirstPaymentProcessingChannel</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>select_payment_method_group</td>
+            <td>$payment_method_group</td>
+            <td>$cd5=payment_processing_channel cd2=$order</td>
+            <td>select_payment_method_group</td>
+            <td>
+              paymentMethodGroupId paymentMethodGroupOrder
+              selectedFirstPaymentProcessingChannel
+            </td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>select_payment_method_group</td>
+            <td>$payment_method_group</td>
+            <td>cd2=$order</td>
+            <td>auto_select_payment_method_group</td>
+            <td>paymentMethodGroupId paymentMethodGroupOrder</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>select_payment_processing_channel</td>
+            <td>$payment_processing_channel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>select_payment_processing_channel</td>
+            <td>$selected_payment_processing_channel</td>
+            <td>$cd5=$paymentMethodGroupSelected</td>
+            <td>auto_select_payment_method</td>
+            <td>selectedPaymentProcessingChannel</td>
+            <td>1,1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>select_payment_processing_channel_dc</td>
+            <td>$payment_processing_channel</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>click_input_card_serial --> click_input_payment_info</td>
+            <td>PaymentInfoSubmission_cardSerial_Input</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>click_input_mobile_number --> click_input_payment_info</td>
+            <td>PaymentInfoSubmission_mobileNumber_Input</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>click_input_card_password --> click_input_payment_info</td>
+            <td>PaymentInfoSubmission_cardPassword_Input</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>confirmation</td>
+            <td>click_button_submit_order</td>
+            <td>$productID</td>
+            <td>$cd1=userID $cd3=action_status</td>
+            <td>click_button_submit_order</td>
+            <td>productId clickButtonSubmitOrderStatus</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment</td>
+            <td>click_input_search_method</td>
+            <td>$payment_method_group</td>
+            <td>$cd1=userID</td>
+            <td>click_input_search_method</td>
+            <td></td>
+            <td>1,1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>confirmation</td>
+            <td>submit_order</td>
+            <td>$productID</td>
+            <td>$cd1=userID cd6=$order_number</td>
+            <td>submit_order</td>
+            <td>productId (thêm) orderNumber</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>order_creation</td>
+            <td>submit_first_order</td>
+            <td>$productID</td>
+            <td>$cd1=userID cd6=$order_number</td>
+            <td>submit_first_order</td>
+            <td>productId (thêm) orderTiming (thêm) orderNumber</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>order_creation</td>
+            <td>submit_next_order</td>
+            <td>$productID</td>
+            <td>$cd1=userID cd6=$order_number</td>
+            <td>submit_next_order</td>
+            <td>productId (thêm) orderTiming (thêm) orderNumber</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="table__wrapper" id="result">
+        <div class="img__description">
+          <img
+            src="./img/result/result.png"
+            title="Result image description"
+            alt="result1"
+          />
+          <img
+            src="./img/result/result2.png"
+            title="Result image description"
+            alt="result2"
+          />
+          <p class="img__description-text">Result image description</p>
+        </div>
+        <table id="table">
+          <tr>
+            <th>Event Category</th>
+            <th>Event Action</th>
+            <th>Event Label</th>
+            <th>Custom Dimension</th>
+            <th>Note</th>
+            <th>Custom_event</th>
+            <th>DataLayer</th>
+            <th>Version</th>
+            <th>Changes</th>
+          </tr>
+          <tr>
+            <td>payment_instruction</td>
+            <td>display_instruction</td>
+            <td>$display_instruction</td>
+            <td>cd1=$userID</td>
+            <td>
+              $display_instruction = zlp_qr, sms_instruction, otc_instruction
+            </td>
+            <td>display_payment_form</td>
+            <td>paymentDisplayInfo selectedFirstPaymentProcessingChannel</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>payment_instruction</td>
+            <td>click_button_submit_check_order</td>
+            <td></td>
+            <td>cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>order_result</td>
+            <td>display_result</td>
+            <td>$display_result</td>
+            <td>cd1=$userID</td>
+            <td>
+              $display_result = order_status | order_in_progress | order_success
+              | order_fail
+            </td>
+            <td>display_result</td>
+            <td>displayResult</td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>order_result</td>
+            <td>click_button_back_to_package</td>
+            <td>$payment_processing_channel</td>
+            <td></td>
+            <td>cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>order_result</td>
+            <td>click_button_back_to_identification</td>
+            <td></td>
+            <td>cd1=$userID</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1,1</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>order_result</td>
+            <td>click_button_back_to_home</td>
+            <td></td>
+            <td>cd1=$userID</td>
+            <td>sessionControl: end</td>
+            <td></td>
+            <td></td>
+            <td>1,0</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      const tabItems = document.querySelectorAll(".tab__item");
+      function activeTab() {
+        console.log("click tab");
+        tabItems.forEach((item) => item.classList.remove("tab-active"));
+        this.classList.add("tab-active");
+        const table = document.getElementById(this.dataset.id);
+        console.log(table);
+        if (table) {
+          const allTable = document.querySelectorAll(".table__wrapper");
+          allTable.forEach((item) => {
+            item.classList.remove("show");
+          });
+          table.classList.add("show");
+        }
+      }
+      tabItems.forEach((item) => {
+        item.addEventListener("click", activeTab);
+      });
+    </script>
+  </body>
+</html>
